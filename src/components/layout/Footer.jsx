@@ -130,7 +130,9 @@ const Footer = () => {
                   <FaPhoneAlt className="text-[#F472B6] text-sm" />
                 </div>
 
-                <span>+91 98765 43210</span>
+                <div className="flex flex-col">
+                  <p>+1 332 242 6637</p>
+                </div>
               </li>
 
               <li className="flex items-start gap-4">
@@ -139,9 +141,8 @@ const Footer = () => {
                 </div>
 
                 <span>
-                  Mumbai, Maharashtra,
+                  123 Business Ave, Suite 100 New York, NY 10001
                   <br />
-                  India
                 </span>
               </li>
             </ul>
