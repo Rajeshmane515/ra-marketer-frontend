@@ -1,5 +1,5 @@
 import React from "react";
-import GlassCard from "../../../ui/glassCard";
+import GlassCard from "../../../ui/GlassCard";
 
 const MetricCard = ({
   icon,

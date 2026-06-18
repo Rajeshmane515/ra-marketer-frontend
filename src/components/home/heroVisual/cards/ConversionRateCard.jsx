@@ -1,6 +1,6 @@
 import React from "react";
 import DonutChart from "../charts/DonutChart";
-import GlassCard from "../../../ui/glassCard";
+import GlassCard from "../../../ui/GlassCard";
 
 const ConversionRateCard = ({ className = "" }) => {
   return (
