@@ -10,10 +10,50 @@ const HeroSection = () => {
       <Background />
 
       {/* Content */}
-      <div className="relative z-20 max-w-6xl mx-auto min-h-screen grid lg:grid-cols-2 items-center gap-12">
+      <div
+        className="
+          relative
+          z-20
+          max-w-7xl
+          mx-auto
+          min-h-screen
+          px-5
+          sm:px-8
+          lg:px-12
+          grid
+          lg:grid-cols-2
+          items-center
+          gap-10
+          lg:gap-12
+          pt-28
+          lg:pt-0
+        "
+      >
         {/* LEFT */}
-        <div className="flex flex-col justify-center">
-          <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-8">
+        <div
+          className="
+            flex
+            flex-col
+            justify-center
+            text-center
+            lg:text-left
+            order-2
+            lg:order-1
+          "
+        >
+          <h1
+            className="
+              text-4xl
+              sm:text-5xl
+              md:text-6xl
+              lg:text-6xl
+              xl:text-7xl
+              font-bold
+              leading-tight
+              mb-6
+              lg:mb-8
+            "
+          >
             <span className="bg-gradient-to-r from-blue-500 via-slate-200 to-pink-400 bg-clip-text text-transparent">
               Captive Demand Gen
             </span>
@@ -25,11 +65,26 @@ const HeroSection = () => {
             </span>
           </h1>
 
-          <p className="text-zinc-400 text-xl md:text-2xl mb-10">
+          <p
+            className="
+              text-zinc-400
+              text-lg
+              sm:text-xl
+              md:text-2xl
+              mb-8
+              lg:mb-10
+            "
+          >
             For Global Agencies & Publishers
           </p>
 
-          <div>
+          <div
+            className="
+              flex
+              justify-center
+              lg:justify-start
+            "
+          >
             <Link to="/contact">
               <Button text="Get Started" />
             </Link>
@@ -37,7 +92,15 @@ const HeroSection = () => {
         </div>
 
         {/* RIGHT */}
-        <div className="flex items-center justify-center">
+        <div
+          className="
+            flex
+            items-center
+            justify-center
+            order-1
+            lg:order-2
+          "
+        >
           <HeroVisual />
         </div>
       </div>
