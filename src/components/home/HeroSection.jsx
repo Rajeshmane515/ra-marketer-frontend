@@ -20,16 +20,16 @@ const HeroSection = () => {
           px-5
           sm:px-8
           lg:px-12
+          pt-28
+          lg:pt-0
           grid
           lg:grid-cols-2
           items-center
           gap-10
           lg:gap-12
-          pt-28
-          lg:pt-0
         "
       >
-        {/* LEFT */}
+        {/* LEFT CONTENT */}
         <div
           className="
             flex
@@ -37,8 +37,6 @@ const HeroSection = () => {
             justify-center
             text-center
             lg:text-left
-            order-2
-            lg:order-1
           "
         >
           <h1
@@ -46,7 +44,6 @@ const HeroSection = () => {
               text-4xl
               sm:text-5xl
               md:text-6xl
-              lg:text-6xl
               xl:text-7xl
               font-bold
               leading-tight
@@ -91,14 +88,14 @@ const HeroSection = () => {
           </div>
         </div>
 
-        {/* RIGHT */}
+        {/* RIGHT VISUAL */}
         <div
           className="
             flex
             items-center
             justify-center
-            order-1
-            lg:order-2
+            mt-8
+            lg:mt-0
           "
         >
           <HeroVisual />
