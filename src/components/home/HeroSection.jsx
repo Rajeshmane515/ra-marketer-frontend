@@ -1,12 +1,11 @@
 import { Link } from "react-router-dom";
 import Button from "../common/Button";
 import Background from "./Background";
-import Ribbon from "../animations/RibbonHero";
 import HeroVisual from "./heroVisual/HeroVisual";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen overflow-hidden">
+    <section className="relative min-h-screen overflow-hidden ">
       <Background />
 
       {/* Content */}
@@ -27,6 +26,7 @@ const HeroSection = () => {
           items-center
           gap-10
           lg:gap-12
+          
         "
       >
         {/* LEFT CONTENT */}

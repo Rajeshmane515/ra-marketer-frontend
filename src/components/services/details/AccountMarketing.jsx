@@ -50,7 +50,6 @@ const AccountMarketing = () => {
 
   return (
     <section className="relative overflow-hidden py-6 bg-black">
-      <Navbar />
       {/* Glow */}
       <div className="absolute right-0 top-0 h-[500px] w-[500px] rounded-full bg-[#2563FF]/20 blur-[180px]" />
 
@@ -237,7 +236,6 @@ const AccountMarketing = () => {
           </button>
         </div>
       </div>
-      <Footer />
     </section>
   );
 };

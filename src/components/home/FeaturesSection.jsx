@@ -32,7 +32,7 @@ const features = [
 
 const FeaturesSection = () => {
   return (
-    <section className="bg-black text-white overflow-hidden">
+    <section className="bg-black text-white overflow-hidden pt-12">
       {/* CONTAINER */}
       <div className="max-w-7xl mx-auto">
         {/* HEADING */}
