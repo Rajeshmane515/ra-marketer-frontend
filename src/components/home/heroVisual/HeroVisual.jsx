@@ -54,8 +54,7 @@ const HeroVisual = () => {
           relative
           z-10
           w-full
-          h-[500px]
-          xl:h-[550px]
+          h-[650px]
         "
       >
         {/* Qualified Leads */}
