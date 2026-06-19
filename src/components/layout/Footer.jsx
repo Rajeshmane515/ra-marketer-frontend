@@ -8,21 +8,46 @@ import { HiOutlineMail } from "react-icons/hi";
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white px-6 pb-10">
-      <div className="max-w-7xl mx-auto rounded-[40px] border border-white/10 bg-gradient-to-b from-[#0B1220] via-[#080D18] to-black overflow-hidden shadow-[0_0_80px_rgba(37,99,255,0.08)]">
+    <footer className="bg-black text-white px-3 sm:px-6 pb-8 lg:pb-10">
+      <div className="max-w-7xl mx-auto rounded-[30px] lg:rounded-[40px] border border-white/10 bg-gradient-to-b from-[#0B1220] via-[#080D18] to-black overflow-hidden shadow-[0_0_80px_rgba(37,99,255,0.08)]">
         {/* Top Section */}
-        <div className="grid md:grid-cols-[420px_130px_180px_300px] gap-12 px-14 py-16">
+        <div
+          className="
+            grid
+            grid-cols-1
+            sm:grid-cols-2
+            lg:grid-cols-[380px_140px_200px_300px]
+            gap-10
+            lg:gap-12
+            px-5
+            sm:px-8
+            lg:px-14
+            py-10
+            lg:py-16
+          "
+        >
           {/* Brand */}
           <div>
             <Link to="/" className="inline-flex items-center mb-6">
               <img
                 src={logo}
                 alt="RA Marketer Logo"
-                className="h-20 w-auto transition-transform duration-300 hover:scale-105"
+                className="h-14 sm:h-16 lg:h-20 w-auto transition-transform duration-300 hover:scale-105"
               />
             </Link>
 
-            <p className="text-zinc-400 text-[15px] leading-7 mb-8 max-w-[380px]">
+            <p
+              className="
+                text-zinc-400
+                text-sm
+                sm:text-[15px]
+                leading-7
+                mb-6
+                lg:mb-8
+                max-w-full
+                lg:max-w-[380px]
+              "
+            >
               B2B lead generation solutions that help businesses connect,
               engage, and convert high-quality leads through data-driven
               strategies, precision targeting, and scalable outreach.
@@ -31,7 +56,7 @@ const Footer = () => {
 
           {/* Company */}
           <div>
-            <h3 className="text-[#2563FF] text-sm font-bold uppercase tracking-[4px] mb-8">
+            <h3 className="text-[#2563FF] text-sm font-bold uppercase tracking-[4px] mb-6 lg:mb-8">
               Company
             </h3>
 
@@ -67,7 +92,7 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h3 className="text-[#2563FF] text-sm font-bold uppercase tracking-[4px] mb-8">
+            <h3 className="text-[#2563FF] text-sm font-bold uppercase tracking-[4px] mb-6 lg:mb-8">
               Services
             </h3>
 
@@ -112,27 +137,25 @@ const Footer = () => {
 
           {/* Contact */}
           <div>
-            <h3 className="text-[#2563FF] text-sm font-bold uppercase tracking-[4px] mb-8">
+            <h3 className="text-[#2563FF] text-sm font-bold uppercase tracking-[4px] mb-6 lg:mb-8">
               Contact
             </h3>
 
             <ul className="space-y-5 text-zinc-400 text-[15px]">
-              <li className="flex items-center gap-4">
+              <li className="flex items-start gap-4">
                 <div className="w-10 h-10 rounded-xl bg-[#2563FF]/10 flex items-center justify-center shrink-0">
                   <HiOutlineMail className="text-[#2563FF] text-xl" />
                 </div>
 
-                <span>hello@ramarketer.com</span>
+                <span className="break-all">hello@ramarketer.com</span>
               </li>
 
-              <li className="flex items-center gap-4">
+              <li className="flex items-start gap-4">
                 <div className="w-10 h-10 rounded-xl bg-[#F472B6]/10 flex items-center justify-center shrink-0">
                   <FaPhoneAlt className="text-[#F472B6] text-sm" />
                 </div>
 
-                <div className="flex flex-col">
-                  <p>+1 332 242 6637</p>
-                </div>
+                <span>+1 332 242 6637</span>
               </li>
 
               <li className="flex items-start gap-4">
@@ -141,8 +164,9 @@ const Footer = () => {
                 </div>
 
                 <span>
-                  123 Business Ave, Suite 100 New York, NY 10001
+                  123 Business Ave, Suite 100
                   <br />
+                  New York, NY 10001
                 </span>
               </li>
             </ul>
@@ -153,12 +177,29 @@ const Footer = () => {
         <Newsletter />
 
         {/* Bottom Row */}
-        <div className="border-t border-white/10 px-14 py-8 flex flex-col md:flex-row items-center justify-between gap-5">
+        <div
+          className="
+            border-t
+            border-white/10
+            px-5
+            sm:px-8
+            lg:px-14
+            py-8
+            flex
+            flex-col
+            lg:flex-row
+            items-center
+            justify-between
+            gap-6
+            text-center
+            lg:text-left
+          "
+        >
           <p className="text-zinc-500 text-sm">
             © 2026 RA Marketer. All rights reserved.
           </p>
 
-          <div className="flex gap-4">
+          <div className="flex flex-wrap justify-center gap-4">
             <a
               href="#"
               className="w-12 h-12 rounded-full border border-white/10 bg-white/[0.02] flex items-center justify-center hover:border-[#2563FF] hover:bg-[#2563FF]/10 hover:text-[#2563FF] transition-all duration-300"
@@ -181,7 +222,18 @@ const Footer = () => {
             </a>
           </div>
 
-          <div className="flex items-center gap-8 text-sm text-zinc-500">
+          <div
+            className="
+              flex
+              flex-col
+              sm:flex-row
+              items-center
+              gap-3
+              sm:gap-8
+              text-sm
+              text-zinc-500
+            "
+          >
             <Link
               to="/privacy-policy"
               className="hover:text-[#2563FF] transition-all duration-300"
