@@ -1,4 +1,5 @@
 import OrbitHero from "./OrbitHero";
+import { Link } from "react-router-dom";
 
 const ServicesHero = () => {
   return (
@@ -7,7 +8,7 @@ const ServicesHero = () => {
         <div
           className="
             grid
-            lg:grid-cols-2
+            lg:grid-cols-[45%_55%]
             items-center
             gap-10
             lg:gap-16
@@ -63,8 +64,9 @@ const ServicesHero = () => {
             </p>
 
             <div className="flex justify-center lg:justify-start">
-              <button
-                className="
+              <Link to="/contact" className="relative z-50">
+                <button
+                  className="
                   rounded-full
                   border
                   border-blue-500/30
@@ -76,9 +78,10 @@ const ServicesHero = () => {
                   transition
                   hover:bg-blue-500
                 "
-              >
-                Explore Services
-              </button>
+                >
+                  Explore Services
+                </button>
+              </Link>
             </div>
           </div>
 

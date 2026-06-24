@@ -14,25 +14,6 @@ export default function Background() {
         <div className="glow-pink" />
 
         {/* Grid */}
-        <svg className="grid-bg">
-          <defs>
-            <pattern
-              id="gridPattern"
-              width="50"
-              height="50"
-              patternUnits="userSpaceOnUse"
-            >
-              <path
-                d="M 50 0 L 0 0 0 50"
-                fill="none"
-                stroke="rgba(255,255,255,0.04)"
-                strokeWidth="1"
-              />
-            </pattern>
-          </defs>
-
-          <rect width="100%" height="100%" fill="url(#gridPattern)" />
-        </svg>
 
         {/* Floating Dots */}
 

@@ -9,7 +9,10 @@ import { HiOutlineMail } from "react-icons/hi";
 const Footer = () => {
   return (
     <footer className="bg-black text-white px-3 sm:px-6 pb-8 lg:pb-10">
-      <div className="max-w-7xl mx-auto rounded-[30px] lg:rounded-[40px] border border-white/10 bg-gradient-to-b from-[#0B1220] via-[#080D18] to-black overflow-hidden shadow-[0_0_80px_rgba(37,99,255,0.08)]">
+      <div className="max-w-7xl py-10 mx-auto rounded-[30px] lg:rounded-[40px] border border-white/10 bg-gradient-to-b from-[#0B1220] via-[#080D18] to-black overflow-hidden shadow-[0_0_80px_rgba(37,99,255,0.08)]">
+        {/* Newsletter */}
+        <Newsletter />
+
         {/* Top Section */}
         <div
           className="
@@ -22,8 +25,6 @@ const Footer = () => {
             px-5
             sm:px-8
             lg:px-14
-            py-10
-            lg:py-16
           "
         >
           {/* Brand */}
@@ -142,23 +143,33 @@ const Footer = () => {
             </h3>
 
             <ul className="space-y-5 text-zinc-400 text-[15px]">
-              <li className="flex items-start gap-4">
+              <li className="flex items-center gap-4">
                 <div className="w-10 h-10 rounded-xl bg-[#2563FF]/10 flex items-center justify-center shrink-0">
                   <HiOutlineMail className="text-[#2563FF] text-xl" />
                 </div>
 
-                <span className="break-all">hello@ramarketer.com</span>
+                <a
+                  href="mailto:info@ramarketer.com"
+                  className="hover:text-[#2563FF] transition-colors"
+                >
+                  info@ramarketer.com
+                </a>
               </li>
 
-              <li className="flex items-start gap-4">
+              <li className="flex items-center gap-4 ">
                 <div className="w-10 h-10 rounded-xl bg-[#F472B6]/10 flex items-center justify-center shrink-0">
                   <FaPhoneAlt className="text-[#F472B6] text-sm" />
                 </div>
 
-                <span>+1 332 242 6637</span>
+                <a
+                  href="tel:+13322426637"
+                  className="hover:text-[#2563FF] transition-colors"
+                >
+                  +1 332 242 6637
+                </a>
               </li>
 
-              <li className="flex items-start gap-4">
+              <li className="flex items-center gap-4">
                 <div className="w-10 h-10 rounded-xl bg-[#2563FF]/10 flex items-center justify-center shrink-0">
                   <FaMapMarkerAlt className="text-[#2563FF] text-sm" />
                 </div>
@@ -173,9 +184,6 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Newsletter */}
-        <Newsletter />
-
         {/* Bottom Row */}
         <div
           className="
@@ -184,7 +192,7 @@ const Footer = () => {
             px-5
             sm:px-8
             lg:px-14
-            py-8
+            pt-8
             flex
             flex-col
             lg:flex-row
@@ -196,12 +204,12 @@ const Footer = () => {
           "
         >
           <p className="text-zinc-500 text-sm">
-            © 2026 RA Marketer. All rights reserved.
+            © {new Date().getFullYear()} RA Marketer.
           </p>
 
           <div className="flex flex-wrap justify-center gap-4">
             <a
-              href="#"
+              href="https://www.linkedin.com/company/ramarketer/"
               className="w-12 h-12 rounded-full border border-white/10 bg-white/[0.02] flex items-center justify-center hover:border-[#2563FF] hover:bg-[#2563FF]/10 hover:text-[#2563FF] transition-all duration-300"
             >
               <FaLinkedinIn size={18} />
@@ -215,7 +223,7 @@ const Footer = () => {
             </a>
 
             <a
-              href="#"
+              href="mailto:info@ramarketer.com"
               className="w-12 h-12 rounded-full border border-white/10 bg-white/[0.02] flex items-center justify-center hover:border-[#2563FF] hover:bg-[#2563FF]/10 hover:text-[#2563FF] transition-all duration-300"
             >
               <HiOutlineMail size={20} />

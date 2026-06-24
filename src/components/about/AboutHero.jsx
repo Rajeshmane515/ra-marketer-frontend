@@ -54,14 +54,6 @@ const AboutHero = () => {
               />
             </button>
           </Link>
-
-          {/* Secondary Button */}
-          <button className="group flex h-14 items-center gap-3 rounded-2xl border border-white/10 bg-white/5 px-8 text-sm font-semibold text-white backdrop-blur-xl transition-all duration-300 hover:scale-105 hover:border-pink-400/40 hover:bg-white/10 hover:shadow-[0_0_40px_rgba(244,114,182,0.25)]">
-            <div className="flex h-9 w-9 items-center justify-center rounded-full bg-white/10">
-              <Play size={16} className="ml-0.5" />
-            </div>
-            Watch Demo
-          </button>
         </div>
 
         {/* Bottom Cards */}

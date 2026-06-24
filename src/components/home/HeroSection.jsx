@@ -5,7 +5,7 @@ import HeroVisual from "./heroVisual/HeroVisual";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen overflow-hidden ">
+    <section className="relative overflow-hidden bg-black py-16 lg:py-20">
       <Background />
 
       {/* Content */}
@@ -15,17 +15,16 @@ const HeroSection = () => {
           z-20
           max-w-7xl
           mx-auto
-          min-h-screen
+          max-h-500
           px-5
           sm:px-8
           lg:px-12
           pt-28
           lg:pt-0
-          grid
-          lg:grid-cols-2
+          grid lg:grid-cols-[55%_45%]
           items-center
           gap-10
-          lg:gap-12
+          lg:gap-6
           
         "
       >
@@ -51,15 +50,11 @@ const HeroSection = () => {
               lg:mb-8
             "
           >
-            <span className="bg-gradient-to-r from-blue-500 via-slate-200 to-pink-400 bg-clip-text text-transparent">
-              Captive Demand Gen
-            </span>
-
-            <br />
-
-            <span className="bg-gradient-to-r from-blue-500 via-slate-200 to-pink-400 bg-clip-text text-transparent">
-              Operational Solutions
-            </span>
+            <h1 className="font-bold text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
+              <span className=" bg-gradient-to-r from-blue-500 via-pink-300 to-white bg-clip-text text-transparent">
+                Captive Demand Gen Operational Solutions
+              </span>
+            </h1>
           </h1>
 
           <p
@@ -80,6 +75,7 @@ const HeroSection = () => {
               flex
               justify-center
               lg:justify-start
+              
             "
           >
             <Link to="/contact">
