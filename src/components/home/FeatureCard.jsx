@@ -17,7 +17,6 @@ const FeatureCard = ({ title, desc, icon: Icon }) => {
         group
       "
     >
-
       {/* ICON BOX */}
       <div
         className="
@@ -36,29 +35,22 @@ const FeatureCard = ({ title, desc, icon: Icon }) => {
           duration-500
         "
       >
-
         <Icon
           className="
             w-7
             h-7
-            text-blue-400
+            text-blue-700
           "
         />
-
       </div>
 
       {/* TITLE */}
-      <h3 className="text-2xl font-semibold mb-4">
-        {title}
-      </h3>
+      <h3 className="text-2xl font-semibold mb-4">{title}</h3>
 
       {/* DESCRIPTION */}
-      <p className="text-zinc-400 leading-relaxed">
-        {desc}
-      </p>
-
+      <p className="text-zinc-400 leading-relaxed">{desc}</p>
     </div>
-  )
-}
+  );
+};
 
-export default FeatureCard
+export default FeatureCard;

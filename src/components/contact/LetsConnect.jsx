@@ -4,6 +4,7 @@ import Container from "../ui/Container";
 import GlassCard from "../ui/GlassCard";
 import GlowButton from "../ui/GlowButton";
 import ContactForm from "./ContactForm";
+import SectionBadge from "../common/SectionBadge";
 
 const LetsConnect = () => {
   return (
@@ -12,11 +13,7 @@ const LetsConnect = () => {
       <div className="absolute right-0 top-0 h-[350px] w-[350px] rounded-full bg-[#F472B6]/10 blur-[120px]" />
 
       <Container>
-        <div className="pb-10 text-center">
-          <p className="mb-4 text-sm uppercase tracking-[0.3em] text-[#2563FF]">
-            Let's Connect
-          </p>
-        </div>
+        <div className="pb-10 text-center"></div>
 
         {/* Main Grid */}
         <div className="grid items-center gap-10 lg:grid-cols-[0.9fr_1.1fr]">
@@ -42,7 +39,7 @@ const LetsConnect = () => {
                 <p className="text-sm text-gray-500">Email Us</p>
 
                 <h3 className="mt-2 text-lg font-semibold text-white">
-                  contact@ramarketer.com
+                  info@ramarketer.com
                 </h3>
               </div>
 
@@ -50,7 +47,7 @@ const LetsConnect = () => {
                 <p className="text-sm text-gray-500">Call Us</p>
 
                 <h3 className="mt-2 text-lg font-semibold text-white">
-                  +91 98765 43210
+                  +1 332 242 6637
                 </h3>
               </div>
             </div>

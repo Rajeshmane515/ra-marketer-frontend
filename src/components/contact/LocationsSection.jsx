@@ -3,6 +3,7 @@ import { MapPin, ChevronRight } from "lucide-react";
 
 import Container from "../ui/Container";
 import GlassCard from "../ui/GlassCard";
+import SectionBadge from "../common/SectionBadge";
 
 const locations = [
   {
@@ -39,9 +40,7 @@ const LocationsSection = () => {
       <Container>
         {/* Heading */}
         <div className="mb-14 text-center">
-          <p className="mb-4 text-sm uppercase tracking-[0.3em] text-[#2563FF]">
-            Our Locations
-          </p>
+          <SectionBadge text="OUR LCATIONS" />
 
           <h2 className="text-3xl font-bold text-white md:text-5xl">
             Serving Clients

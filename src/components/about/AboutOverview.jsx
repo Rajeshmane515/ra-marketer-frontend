@@ -8,6 +8,9 @@ import {
   BarChart3,
   CheckCircle,
 } from "lucide-react";
+import SectionBadge from "../common/SectionBadge";
+import FeatureCard from "../services/commonComponents/FeatureCard";
+import CTASection from "../services/commonComponents/CTASection";
 
 const AboutOverview = () => {
   const strengths = [
@@ -19,16 +22,35 @@ const AboutOverview = () => {
     "Dedicated Campaign Support",
   ];
 
+  const features = [
+    {
+      icon: <Users size={32} />,
+      title: "Audience First",
+      description:
+        "Every campaign starts with understanding your audience, their challenges, and their buying journey.",
+    },
+    {
+      icon: <BarChart3 size={32} />,
+      title: "Performance Focused",
+      description:
+        "We focus on measurable outcomes, helping businesses maximize the impact of their marketing investments.",
+    },
+    {
+      icon: <Rocket size={32} />,
+      title: "Growth Driven",
+      description:
+        "Our strategies are designed to support long-term growth, stronger pipelines, and better sales opportunities.",
+    },
+  ];
+
   return (
     <section className="relative py-28 bg-black">
+      <div className="flex justify-center mb-8">
+        <SectionBadge text="  About RA Marketer" />
+      </div>
       <div className="mx-auto max-w-7xl px-6">
-        {/* About RA Marketer */}
         <div className="grid items-center gap-20 lg:grid-cols-2">
           <div>
-            <span className="text-sm font-semibold uppercase tracking-[0.3em] text-[#2563FF]">
-              About RA Marketer
-            </span>
-
             <h2 className="mt-6 text-5xl font-bold leading-tight text-white">
               Helping B2B Companies
               <br />
@@ -104,9 +126,7 @@ const AboutOverview = () => {
         {/* Why Businesses Work With Us */}
         <div className="mt-32">
           <div className="text-center">
-            <span className="text-sm font-semibold uppercase tracking-[0.3em] text-[#2563FF]">
-              Why RA Marketer
-            </span>
+            <SectionBadge text="Why RA Marketer" />
 
             <h2 className="mt-4 text-5xl font-bold text-white">
               Built Around Results
@@ -114,66 +134,25 @@ const AboutOverview = () => {
           </div>
 
           <div className="mt-14 grid gap-8 md:grid-cols-3">
-            <div className="rounded-[32px] border border-white/10 bg-[#07101F] p-8">
-              <Users size={32} className="text-[#2563FF]" />
-
-              <h3 className="mt-5 text-2xl font-bold text-white">
-                Audience First
-              </h3>
-
-              <p className="mt-4 text-white/70">
-                Every campaign starts with understanding your audience, their
-                challenges, and their buying journey.
-              </p>
-            </div>
-
-            <div className="rounded-[32px] border border-white/10 bg-[#07101F] p-8">
-              <BarChart3 size={32} className="text-[#2563FF]" />
-
-              <h3 className="mt-5 text-2xl font-bold text-white">
-                Performance Focused
-              </h3>
-
-              <p className="mt-4 text-white/70">
-                We focus on measurable outcomes, helping businesses maximize the
-                impact of their marketing investments.
-              </p>
-            </div>
-
-            <div className="rounded-[32px] border border-white/10 bg-[#07101F] p-8">
-              <Rocket size={32} className="text-[#2563FF]" />
-
-              <h3 className="mt-5 text-2xl font-bold text-white">
-                Growth Driven
-              </h3>
-
-              <p className="mt-4 text-white/70">
-                Our strategies are designed to support long-term growth,
-                stronger pipelines, and better sales opportunities.
-              </p>
-            </div>
+            {features.map((feature, index) => (
+              <FeatureCard
+                key={index}
+                icon={feature.icon}
+                title={feature.title}
+                description={feature.description}
+              />
+            ))}
           </div>
         </div>
 
         {/* CTA */}
-        <div className="mt-32 rounded-[40px] border border-[#2563FF]/20 bg-[#001A66]/20 p-14 text-center">
-          <h2 className="text-5xl font-bold text-white">
-            Let's Build Something Bigger Together
-          </h2>
-
-          <p className="mx-auto mt-6 max-w-3xl text-lg text-white/70">
-            Whether you're looking to generate demand, reach decision-makers, or
+        <CTASection
+          title=" Let's Build Something Bigger Together"
+          description=" Whether you're looking to generate demand, reach decision-makers, or
             build a stronger sales pipeline, RA Marketer is ready to help you
-            achieve your growth goals.
-          </p>
-
-          <Link to="/contact">
-            <button className="mt-10 inline-flex items-center gap-3 rounded-xl bg-[#2563FF] px-8 py-4 font-semibold text-white transition hover:scale-105">
-              Partner With Us
-              <ArrowRight size={20} />
-            </button>
-          </Link>
-        </div>
+            achieve your growth goals."
+          buttonText="Partner With Us"
+        />
       </div>
     </section>
   );
