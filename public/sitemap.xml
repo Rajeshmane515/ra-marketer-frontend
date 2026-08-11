@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <url>
+        <loc>https://ramarketer.com/</loc>
+    </url>
+
+    <url>
+        <loc>https://ramarketer.com/about</loc>
+    </url>
+
+    <url>
+        <loc>https://ramarketer.com/contact</loc>
+    </url>
+
+    <url>
+        <loc>https://ramarketer.com/services</loc>
+    </url>
+
+    <url>
+        <loc>https://ramarketer.com/services/lead-generation</loc>
+    </url>
+
+    <url>
+        <loc>https://ramarketer.com/services/demand-generation</loc>
+    </url>
+
+    <url>
+        <loc>https://ramarketer.com/services/content-syndication</loc>
+    </url>
+
+    <url>
+        <loc>https://ramarketer.com/services/account-based-marketing</loc>
+    </url>
+
+    <url>
+        <loc>https://ramarketer.com/services/email-marketing</loc>
+    </url>
+
+</urlset>
