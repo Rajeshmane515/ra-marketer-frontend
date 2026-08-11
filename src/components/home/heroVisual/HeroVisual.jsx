@@ -3,7 +3,6 @@ import React from "react";
 import QualifiedLeadsCard from "./cards/QualifiedLeadsCard";
 import ActiveCampaignsCard from "./cards/ActiveCampaignsCard";
 import ConversionRateCard from "./cards/ConversionRateCard";
-import GlowOrb from "./effects/GlowOrb";
 
 const HeroVisual = () => {
   return (
@@ -18,14 +17,6 @@ const HeroVisual = () => {
         lg:py-0
       "
     >
-      {/* Glow */}
-      <GlowOrb
-        size={250}
-        color="violet"
-        opacity={10}
-        className="right-10 top-20"
-      />
-
       <div
         className="
           relative

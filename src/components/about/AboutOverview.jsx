@@ -58,11 +58,12 @@ const AboutOverview = () => {
             </h2>
 
             <p className="mt-8 text-lg leading-relaxed text-white/70">
-              RA Marketer is a modern B2B marketing partner focused on
-              connecting businesses with the right audience at the right time.
-              We combine strategic targeting, quality data, and
-              performance-driven campaigns to help organizations create stronger
-              pipelines and generate meaningful opportunities.
+              RA Marketer is a modern B2B marketing agency based in Pune,
+              helping businesses connect with the right audience at the right
+              time. We combine strategic targeting, quality data, demand
+              generation, account-based marketing, content syndication, and
+              performance-driven campaigns to help organizations generate
+              qualified leads and build stronger sales pipelines.
             </p>
 
             <p className="mt-6 text-lg leading-relaxed text-white/70">

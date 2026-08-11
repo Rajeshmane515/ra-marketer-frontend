@@ -1,5 +1,4 @@
 import React from "react";
-import BackgroundEffects from "../components/ui/BackgroundEffects";
 import Navbar from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";
 import ContactHero from "../components/contact/ContactHero";

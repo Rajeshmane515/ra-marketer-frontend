@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Target, TrendingUp, Building2, Share2 } from "lucide-react";
 
-import targetImg from "../../assets/services/target_trans.png";
+import targetImg from "../../assets/services/target_trans.webp";
 
 const OrbitHero = () => {
   const isMobile = typeof window !== "undefined" && window.innerWidth < 640;

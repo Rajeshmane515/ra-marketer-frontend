@@ -6,6 +6,7 @@ import StatsSection from "../components/home/StatsSection";
 import CompaniesSection from "../components/home/CompaniesSection";
 import CtaSection from "../components/home/CTA-Section";
 import { FloatingOrbs } from "../components/common/FloatingOrbs";
+import FAQSection from "../components/common/FAQSection";
 
 const Home = () => {
   return (
@@ -27,6 +28,8 @@ const Home = () => {
         <CompaniesSection />
 
         <CtaSection />
+
+        <FAQSection />
       </div>
     </main>
   );

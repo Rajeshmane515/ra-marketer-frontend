@@ -32,8 +32,9 @@ const features = [
 
 const FeaturesSection = () => {
   return (
-    <section className="bg-black text-white overflow-hidden pt-12">
+    <section className="relative overflow-hidden bg-gradient-to-b from-[#050814] via-[#04050d] to-black text-white pt-16">
       {/* CONTAINER */}
+
       <div className="max-w-7xl mx-auto">
         {/* HEADING */}
         <div className="text-center mb-16 px-6">

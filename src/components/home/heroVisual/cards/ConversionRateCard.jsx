@@ -1,5 +1,5 @@
 import React from "react";
-import DonutChart from "../charts/DonutChart";
+import DonutChart from "./DonutChart";
 import GlassCard from "../../../ui/GlassCard";
 
 const ConversionRateCard = ({ className = "" }) => {

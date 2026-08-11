@@ -5,6 +5,8 @@ import FeatureCard from "../commonComponents/FeatureCard";
 import CTASection from "../commonComponents/CTASection";
 import ServiceList from "../commonComponents/ServiceList";
 import PageContainer from "../commonComponents/PageContainer";
+import SEO from "../../common/SEO.jsx";
+
 import {
   ArrowRight,
   TrendingUp,
@@ -52,88 +54,94 @@ const DemandGeneration = () => {
   ];
 
   return (
-    <PageContainer>
-      {/* HERO */}
-      <PageHero
-        badge="Demand Generation"
-        title="Fill Your Pipeline With"
-        highlight="Qualified Opportunities"
-        description="Demand generation is more than collecting contacts. It's about creating awareness, building trust, and engaging the right audience before they actively start searching for solutions."
-        primaryButtonText="Start Generating Demand"
+    <>
+      <SEO
+        title="Demand Generation Agency | RA Marketer"
+        description="RA Marketer is a demand generation agency helping B2B companies build awareness, engage target audiences, and generate qualified sales opportunities."
       />
-
-      {/* BENEFITS */}
-      <div className="mt-28 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-        {benefits.map((item, index) => (
-          <FeatureCard
-            key={index}
-            icon={item.icon}
-            title={item.title}
-            description={item.description}
-          />
-        ))}
-      </div>
-
-      {/* WHY CHOOSE US */}
-      <div className="mt-32">
-        <SectionHeading
-          title="Why Businesses Choose Adeverra"
-          description="We combine audience intelligence, data-driven targeting, and personalized outreach strategies to help businesses generate meaningful demand."
+      <PageContainer>
+        {/* HERO */}
+        <PageHero
+          badge="Demand Generation Services"
+          title="B2B Demand Generation"
+          highlight="Agency"
+          description="RA Marketer is a demand generation agency helping B2B companies build awareness, engage target audiences, and generate qualified sales opportunities."
+          primaryButtonText="Start Generating Demand"
         />
 
-        <div className="mt-16 space-y-8">
-          <div className="rounded-[30px] border border-white/10 bg-[#07101F] p-8">
-            <h3 className="text-2xl font-bold text-white">
-              Quality Over Quantity
-            </h3>
+        {/* BENEFITS */}
+        <div className="mt-28 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+          {benefits.map((item, index) => (
+            <FeatureCard
+              key={index}
+              icon={item.icon}
+              title={item.title}
+              description={item.description}
+            />
+          ))}
+        </div>
 
-            <p className="mt-4 text-white/60">
-              We focus on attracting relevant prospects instead of generating
-              large volumes of unqualified leads.
-            </p>
-          </div>
+        {/* WHY CHOOSE US */}
+        <div className="mt-32">
+          <SectionHeading
+            title="Why Businesses Choose RA Marketer"
+            description="Our demand generation strategies combine audience intelligence, data-driven targeting, and personalized outreach to help B2B companies create meaningful demand and qualified opportunities."
+          />
 
-          <div className="rounded-[30px] border border-white/10 bg-[#07101F] p-8">
-            <h3 className="text-2xl font-bold text-white">
-              Data-Driven Targeting
-            </h3>
+          <div className="mt-16 space-y-8">
+            <div className="rounded-[30px] border border-white/10 bg-[#07101F] p-8">
+              <h3 className="text-2xl font-bold text-white">
+                Quality Over Quantity
+              </h3>
 
-            <p className="mt-4 text-white/60">
-              Every campaign is built around audience insights and buyer intent
-              signals.
-            </p>
-          </div>
+              <p className="mt-4 text-white/60">
+                We focus on attracting relevant prospects instead of generating
+                large volumes of unqualified leads.
+              </p>
+            </div>
 
-          <div className="rounded-[30px] border border-white/10 bg-[#07101F] p-8">
-            <h3 className="text-2xl font-bold text-white">
-              Engagement That Converts
-            </h3>
+            <div className="rounded-[30px] border border-white/10 bg-[#07101F] p-8">
+              <h3 className="text-2xl font-bold text-white">
+                Data-Driven Targeting
+              </h3>
 
-            <p className="mt-4 text-white/60">
-              Build awareness, generate interest, and nurture prospects into
-              sales-ready opportunities.
-            </p>
+              <p className="mt-4 text-white/60">
+                Every campaign is built around audience insights and buyer
+                intent signals.
+              </p>
+            </div>
+
+            <div className="rounded-[30px] border border-white/10 bg-[#07101F] p-8">
+              <h3 className="text-2xl font-bold text-white">
+                Engagement That Converts
+              </h3>
+
+              <p className="mt-4 text-white/60">
+                Build awareness, generate interest, and nurture prospects into
+                sales-ready opportunities.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
 
-      {/* SERVICES */}
-      <div className="mt-32">
-        <SectionHeading title="Demand Generation Solutions" />
+        {/* SERVICES */}
+        <div className="mt-32">
+          <SectionHeading title="Demand Generation Solutions" />
 
-        <div className="mt-14">
-          <ServiceList items={services} />
+          <div className="mt-14">
+            <ServiceList items={services} />
+          </div>
         </div>
-      </div>
 
-      {/* CTA */}
+        {/* CTA */}
 
-      <CTASection
-        title="Don't Wait — Start Generating Demand"
-        description="Reach the right audience, create meaningful engagement, and build a stronger sales pipeline with Adeverra."
-        buttonText="Generate Demand Now"
-      />
-    </PageContainer>
+        <CTASection
+          title="Don't Wait — Start Generating Demand"
+          description="Reach the right audience, create meaningful engagement, and build a stronger sales pipeline with RA Marketer."
+          buttonText="Generate Demand Now"
+        />
+      </PageContainer>
+    </>
   );
 };
 

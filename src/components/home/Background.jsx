@@ -11,7 +11,6 @@ export default function Background() {
 
         {/* Glows */}
         <div className="glow-blue" />
-        <div className="glow-pink" />
 
         {/* Grid */}
 
@@ -193,21 +192,7 @@ const css = `
   filter:blur(40px);
 }
 
-.glow-pink{
-  position:absolute;
-  bottom:-250px;
-  left:-150px;
-  width:650px;
-  height:650px;
-  border-radius:50%;
-  background:
-  radial-gradient(
-    circle,
-    rgba(236,72,153,.25) 0%,
-    transparent 70%
-  );
-  filter:blur(40px);
-}
+
 
 .grid-bg{
   position:absolute;

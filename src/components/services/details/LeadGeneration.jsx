@@ -5,6 +5,8 @@ import FeatureCard from "../commonComponents/FeatureCard";
 import CTASection from "../commonComponents/CTASection";
 import ServiceList from "../commonComponents/ServiceList";
 import PageContainer from "../commonComponents/PageContainer";
+import SEO from "../../common/SEO.jsx";
+
 import {
   ArrowRight,
   Target,
@@ -80,70 +82,77 @@ const LeadGeneration = () => {
   ];
 
   return (
-    <PageContainer>
-      {/* Hero */}
-      <PageHero
-        badge="B2B Lead Generation"
-        title="Generate More"
-        highlight="Qualified Leads"
-        description="Connect with the right decision-makers through research-driven prospecting, verified contact data, and targeted outreach strategies designed to build a stronger sales pipeline."
-        primaryButtonText="Start Generating Leads"
+    <>
+      <SEO
+        title="B2B Lead Generation Services | RA Marketer"
+        description="RA Marketer provides B2B lead generation services that help businesses identify, reach, and qualify decision-makers to build a stronger sales pipeline."
       />
 
-      {/* Capabilities */}
-      <div className="mt-32">
-        <div className="text-center">
-          <SectionHeading
-            title="Core Capabilities"
-            description="Everything needed to support a modern lead generation strategy."
-          />
-        </div>
+      <PageContainer>
+        {/* Hero */}
+        <PageHero
+          badge="Lead Generation"
+          title="B2B Lead Generation"
+          highlight="Services"
+          description="RA Marketer provides B2B lead generation services that help businesses identify the right decision-makers, connect with qualified prospects, and build a stronger sales pipeline."
+          primaryButtonText="Get Started"
+        />
 
-        <div className="mt-14 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-          {capabilities.map((item, index) => (
-            <FeatureCard
-              key={index}
-              icon={item.icon}
-              title={item.title}
-              description={item.description}
+        {/* Capabilities */}
+        <div className="mt-32">
+          <div className="text-center">
+            <SectionHeading
+              title="Core Capabilities"
+              description="RA Marketer helps IT companies and B2B organizations generate qualified leads by reaching relevant decision-makers and building targeted sales pipelines."
             />
-          ))}
+          </div>
+
+          <div className="mt-14 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+            {capabilities.map((item, index) => (
+              <FeatureCard
+                key={index}
+                icon={item.icon}
+                title={item.title}
+                description={item.description}
+              />
+            ))}
+          </div>
         </div>
-      </div>
 
-      {/* Included */}
-      <div className="mt-32 rounded-[40px] border border-white/10 bg-[#07101F] p-12">
-        <SectionHeading title="What's Included" />
+        {/* Included */}
+        <div className="mt-32 rounded-[40px] border border-white/10 bg-[#07101F] p-12">
+          <SectionHeading title="What's Included" />
 
-        <div className="mt-12">
-          <ServiceList items={solutions} />
+          <div className="mt-12">
+            <ServiceList items={solutions} />
+          </div>
         </div>
-      </div>
 
-      {/* Process */}
-      <div className="mt-32">
-        <SectionHeading title="Our Process" />
+        {/* Process */}
+        <div className="mt-32">
+          <SectionHeading title="Our Process" />
 
-        <div className="mt-14 grid gap-8 md:grid-cols-4">
-          {process.map((item, index) => (
-            <FeatureCard
-              key={index}
-              icon={item.icon}
-              title={item.title}
-              description={item.description}
-            />
-          ))}
+          <div className="mt-14 grid gap-8 md:grid-cols-4">
+            {process.map((item, index) => (
+              <FeatureCard
+                key={index}
+                icon={item.icon}
+                title={item.title}
+                description={item.description}
+              />
+            ))}
+          </div>
         </div>
-      </div>
 
-      {/* CTA */}
+        {/* CTA */}
 
-      <CTASection
-        title="Ready To Build A Stronger Pipeline?"
-        description="Reach the right prospects, start better conversations, and create more opportunities for growth."
-        buttonText="Get Started"
-      />
-    </PageContainer>
+        <CTASection
+          title="Ready To Build A Stronger Pipeline?"
+          description="Reach the right prospects, start better conversations, and create more opportunities for growth."
+          buttonText="Get Started"
+        />
+      </PageContainer>
+    </>
   );
 };
 

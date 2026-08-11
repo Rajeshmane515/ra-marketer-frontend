@@ -133,13 +133,11 @@ const Newsletter = () => {
               "
             />
 
-            <button
+            <Button
+              text={loading ? "Subscribing..." : "Subscribe"}
               type="submit"
               disabled={loading}
-              className="w-full sm:w-auto"
-            >
-              <Button text={loading ? "Subscribing..." : "Subscribe"} />
-            </button>
+            />
           </form>
         </div>
       </div>

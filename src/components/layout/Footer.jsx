@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import Newsletter from "../common/Newsletter";
-import logo from "../../assets/logos/transparent_logo.png";
+import logo from "../../assets/logos/black_background.png";
 
 import { FaLinkedinIn, FaPhoneAlt, FaMapMarkerAlt } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
@@ -29,11 +29,11 @@ const Footer = () => {
         >
           {/* Brand */}
           <div>
-            <Link to="/" className="inline-flex items-center mb-6">
+            <Link to="/" className="inline-flex items-center">
               <img
                 src={logo}
                 alt="RA Marketer Logo"
-                className="h-14 sm:h-16 lg:h-20 w-auto transition-transform duration-300 hover:scale-105"
+                className="h-18 sm:h-24 lg:h-30 w-auto transition-transform duration-300 hover:scale-105"
               />
             </Link>
 

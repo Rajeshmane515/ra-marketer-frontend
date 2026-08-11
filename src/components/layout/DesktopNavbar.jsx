@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import logo from "../../assets/logos/transparent_logo.png";
+import logo from "../../assets/logos/black_background.png";
 import Button from "../common/Button";
 
 const navItems = [

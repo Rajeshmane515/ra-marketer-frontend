@@ -29,10 +29,10 @@ const AboutHero = () => {
         {/* Heading */}
         <div className="mx-auto max-w-5xl text-center">
           <h1 className="text-5xl font-bold leading-tight md:text-7xl">
-            <span className="text-white">Building Modern</span>
+            <span className="text-white">Your B2B Marketing Partner</span>
             <br />
             <span className="bg-gradient-to-r from-[#2563FF] via-[#E2E8F0] to-[#F472B6] bg-clip-text text-transparent">
-              Digital Experiences
+              For Predictable Growth
             </span>
           </h1>
 

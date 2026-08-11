@@ -15,6 +15,7 @@ import LeadGeneration from "./components/services/details/LeadGeneration";
 import DemandGeneration from "./components/services/details/DemandGeneration";
 import ContentSyndication from "./components/services/details/ContentSyndication";
 import AccountMarketing from "./components/services/details/AccountMarketing";
+import EmailMarketing from "./components/services/details/EmailMarketing";
 
 const App = () => {
   return (
@@ -44,6 +45,7 @@ const App = () => {
           path="/services/account-based-marketing"
           element={<AccountMarketing />}
         />
+        <Route path="/services/email-marketing" element={<EmailMarketing />} />
 
         {/* 404 */}
         <Route path="*" element={<NotFound />} />

@@ -1,4 +1,4 @@
-import { Target, TrendingUp, Building2, Share2 } from "lucide-react";
+import { Target, TrendingUp, Building2, Share2, Mail } from "lucide-react";
 
 export const services = [
   {
@@ -91,5 +91,28 @@ export const services = [
     buttonText: "See More",
 
     route: "/services/content-syndication",
+  },
+
+  {
+    id: 5,
+    icon: <Mail size={90} strokeWidth={1.5} />,
+
+    // Card Content
+    title: "B2B Email Marketing",
+    subtitle: "Engage and nurture prospects",
+    description:
+      "Reach targeted prospects with personalized email campaigns designed to build relationships and create sales opportunities.",
+
+    // Preview Section Content
+    badge: "B2B Email Marketing",
+
+    heading: "Turn Email Outreach Into Sales Opportunities",
+
+    previewDescription:
+      "Reach the right prospects, nurture relationships, and create meaningful B2B opportunities through targeted email marketing campaigns.",
+
+    buttonText: "See More",
+
+    route: "/services/email-marketing",
   },
 ];

@@ -21,7 +21,7 @@ const HeroSection = () => {
           lg:px-12
           pt-28
           lg:pt-0
-          grid lg:grid-cols-[55%_45%]
+          grid lg:grid-cols-[60%_40%]
           items-center
           gap-10
           lg:gap-6
@@ -40,21 +40,20 @@ const HeroSection = () => {
         >
           <h1
             className="
-              text-4xl
-              sm:text-5xl
-              md:text-6xl
-              xl:text-7xl
-              font-bold
-              leading-tight
-              mb-6
-              lg:mb-8
-            "
+            text-4xl
+            sm:text-5xl
+            md:text-6xl
+            xl:text-7xl
+            font-bold
+            leading-tight
+            mb-6
+            lg:mb-8
+            text-center
+          "
           >
-            <h1 className="font-bold text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
-              <span className=" bg-gradient-to-r from-blue-500 via-pink-300 to-white bg-clip-text text-transparent">
-                Captive Demand Gen Operational Solutions
-              </span>
-            </h1>
+            <span className="bg-gradient-to-r from-blue-500 via-pink-300 to-white bg-clip-text text-transparent">
+              B2B Lead Generation & Demand Generation Services
+            </span>
           </h1>
 
           <p
