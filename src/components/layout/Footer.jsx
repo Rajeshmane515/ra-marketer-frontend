@@ -149,10 +149,10 @@ const Footer = () => {
                 </div>
 
                 <a
-                  href="mailto:info@ramarketer.com"
+                  href="mailto:rahul@ramarketer.com"
                   className="hover:text-[#2563FF] transition-colors"
                 >
-                  info@ramarketer.com
+                  rahul@ramarketer.com
                 </a>
               </li>
 
@@ -162,10 +162,10 @@ const Footer = () => {
                 </div>
 
                 <a
-                  href="tel:+13322426637"
+                  href="tel:+91 95183 82824"
                   className="hover:text-[#2563FF] transition-colors"
                 >
-                  +1 332 242 6637
+                  +91 95183 82824
                 </a>
               </li>
 
@@ -175,9 +175,9 @@ const Footer = () => {
                 </div>
 
                 <span>
-                  123 Business Ave, Suite 100
+                  Bramhacorp Business Park,
                   <br />
-                  New York, NY 10001
+                  Wadgaonsheri, Pune, Maharashtra - 411014
                 </span>
               </li>
             </ul>
@@ -223,7 +223,7 @@ const Footer = () => {
             </a>
 
             <a
-              href="mailto:info@ramarketer.com"
+              href="mailto:rahul@ramarketer.com"
               className="w-12 h-12 rounded-full border border-white/10 bg-white/[0.02] flex items-center justify-center hover:border-[#2563FF] hover:bg-[#2563FF]/10 hover:text-[#2563FF] transition-all duration-300"
             >
               <HiOutlineMail size={20} />

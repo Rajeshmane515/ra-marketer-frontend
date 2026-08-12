@@ -278,9 +278,9 @@ const TermsAndConditions = () => {
                 <div className="rounded-2xl border border-blue-500/20 bg-blue-500/5 p-6">
                   <h3 className="mb-4 text-xl font-semibold">RA Marketer</h3>
 
-                  <p className="text-zinc-400">Email: info@ramarketer.com</p>
+                  <p className="text-zinc-400">Email: rahul@ramarketer.com</p>
 
-                  <p className="text-zinc-400">Phone: +1 332 242 6637</p>
+                  <p className="text-zinc-400">Phone: +91 95183 82824</p>
 
                   <p className="text-zinc-400">Website: www.ramarketer.com</p>
                 </div>

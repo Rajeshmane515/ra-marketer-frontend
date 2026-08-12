@@ -6,6 +6,7 @@ import Button from "../common/Button";
 const navItems = [
   { name: "Home", path: "/" },
   { name: "Services", path: "/services" },
+  { name: "Blogs", path: "/blog" },
   { name: "About Us", path: "/about" },
   { name: "Contact", path: "/contact" },
 ];

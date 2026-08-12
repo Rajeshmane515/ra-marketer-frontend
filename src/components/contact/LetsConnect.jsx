@@ -39,7 +39,7 @@ const LetsConnect = () => {
                 <p className="text-sm text-gray-500">Email Us</p>
 
                 <h3 className="mt-2 text-lg font-semibold text-white">
-                  info@ramarketer.com
+                  rahul@ramarketer.com
                 </h3>
               </div>
 
@@ -47,7 +47,7 @@ const LetsConnect = () => {
                 <p className="text-sm text-gray-500">Call Us</p>
 
                 <h3 className="mt-2 text-lg font-semibold text-white">
-                  +1 332 242 6637
+                  +91 95183 82824
                 </h3>
               </div>
             </div>

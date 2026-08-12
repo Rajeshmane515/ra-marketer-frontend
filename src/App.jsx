@@ -10,6 +10,8 @@ import NotFound from "./pages/NotFound";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Terms from "./pages/Terms";
 import Services from "./pages/Services";
+import Blog from "./pages/Blog";
+import BlogPost from "./pages/BlogPost";
 
 import LeadGeneration from "./components/services/details/LeadGeneration";
 import DemandGeneration from "./components/services/details/DemandGeneration";
@@ -26,6 +28,8 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/:slug" element={<BlogPost />} />
 
         {/* Legal Pages */}
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />

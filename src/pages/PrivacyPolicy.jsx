@@ -277,9 +277,9 @@ const PrivacyPolicy = () => {
                     RA Marketer
                   </h3>
 
-                  <p className="text-zinc-400">Email: info@ramarketer.com</p>
+                  <p className="text-zinc-400">Email: rahul@ramarketer.com</p>
 
-                  <p className="text-zinc-400">Phone: +1 332 242 6637</p>
+                  <p className="text-zinc-400">Phone: +91 95183 82824</p>
 
                   <p className="text-zinc-400">Website: www.ramarketer.com</p>
                 </div>
