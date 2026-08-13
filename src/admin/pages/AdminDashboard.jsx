@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Box, Button, Typography, CircularProgress } from "@mui/material";
 import { Users, Mail, LogOut, Eye, Download } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-import API_URL from "../api.js";
+const API_URL = import.meta.env.VITE_API_URL;
 
 const AdminDashboard = () => {
   const navigate = useNavigate();

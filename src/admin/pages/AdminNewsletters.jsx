@@ -1,5 +1,4 @@
 import React, { useEffect, useMemo, useState } from "react";
-import API_URL from "../api.js";
 import {
   Box,
   Button,
@@ -19,6 +18,8 @@ import {
 import { ArrowLeft, Mail, Search, Trash2 } from "lucide-react";
 
 import { useNavigate } from "react-router-dom";
+
+const API_URL = import.meta.env.VITE_API_URL;
 
 const AdminNewsletters = () => {
   const navigate = useNavigate();
