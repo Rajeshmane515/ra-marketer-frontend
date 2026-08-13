@@ -13,6 +13,11 @@ import Services from "./pages/Services";
 import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
 
+import AdminLogin from "./admin/pages/AdminLogin";
+import AdminDashboard from "./admin/pages/AdminDashboard";
+import AdminContacts from "./admin/pages/AdminContacts";
+import AdminNewsletters from "./admin/pages/AdminNewsletters";
+
 import LeadGeneration from "./components/services/details/LeadGeneration";
 import DemandGeneration from "./components/services/details/DemandGeneration";
 import ContentSyndication from "./components/services/details/ContentSyndication";
@@ -22,12 +27,13 @@ import EmailMarketing from "./components/services/details/EmailMarketing";
 const App = () => {
   return (
     <Routes>
+      {/* ================= PUBLIC WEBSITE ================= */}
       <Route element={<MainLayout />}>
-        {/* Main Pages */}
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/services" element={<Services />} />
+
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:slug" element={<BlogPost />} />
 
@@ -37,23 +43,37 @@ const App = () => {
 
         {/* Service Pages */}
         <Route path="/services/lead-generation" element={<LeadGeneration />} />
+
         <Route
           path="/services/demand-generation"
           element={<DemandGeneration />}
         />
+
         <Route
           path="/services/content-syndication"
           element={<ContentSyndication />}
         />
+
         <Route
           path="/services/account-based-marketing"
           element={<AccountMarketing />}
         />
+
         <Route path="/services/email-marketing" element={<EmailMarketing />} />
 
         {/* 404 */}
         <Route path="*" element={<NotFound />} />
       </Route>
+
+      {/* ================= ADMIN ================= */}
+      <Route path="/admin" element={<AdminLogin />} />
+
+      <Route path="/admin/dashboard" element={<AdminDashboard />} />
+      <Route path="/admin/dashboard/contacts" element={<AdminContacts />} />
+      <Route
+        path="/admin/dashboard/newsletters"
+        element={<AdminNewsletters />}
+      />
     </Routes>
   );
 };
