@@ -1,9 +1,18 @@
 import React from "react";
 
-const GlowButton = ({ text }) => {
+const GlowButton = ({
+  text,
+  type = "button",
+  disabled = false,
+  onClick,
+  className = "",
+}) => {
   return (
     <button
-      className="
+      type={type}
+      disabled={disabled}
+      onClick={onClick}
+      className={`
         relative overflow-hidden
         rounded-full
         border border-white/10
@@ -11,7 +20,10 @@ const GlowButton = ({ text }) => {
         text-sm font-medium text-white
         transition-all duration-300
         hover:scale-105
-      "
+        disabled:cursor-not-allowed
+        disabled:opacity-60
+        ${className}
+      `}
     >
       <span className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 opacity-80" />
 

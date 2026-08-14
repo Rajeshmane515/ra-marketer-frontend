@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 
 import MainLayout from "./components/layout/MainLayout";
 
+// Public pages
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
@@ -13,11 +14,16 @@ import Services from "./pages/Services";
 import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
 
+// Admin pages
 import AdminLogin from "./admin/pages/AdminLogin";
 import AdminDashboard from "./admin/pages/AdminDashboard";
 import AdminContacts from "./admin/pages/AdminContacts";
 import AdminNewsletters from "./admin/pages/AdminNewsletters";
 
+// Admin protection
+import AdminProtectedRoute from "./admin/components/AdminProtectedRoute";
+
+// Service pages
 import LeadGeneration from "./components/services/details/LeadGeneration";
 import DemandGeneration from "./components/services/details/DemandGeneration";
 import ContentSyndication from "./components/services/details/ContentSyndication";
@@ -27,18 +33,29 @@ import EmailMarketing from "./components/services/details/EmailMarketing";
 const App = () => {
   return (
     <Routes>
-      {/* ================= PUBLIC WEBSITE ================= */}
+      {/* ==================================================
+          PUBLIC WEBSITE
+      ================================================== */}
+
       <Route element={<MainLayout />}>
+        {/* Home */}
         <Route path="/" element={<Home />} />
+
+        {/* Main Pages */}
         <Route path="/about" element={<About />} />
+
         <Route path="/contact" element={<Contact />} />
+
         <Route path="/services" element={<Services />} />
 
+        {/* Blog */}
         <Route path="/blog" element={<Blog />} />
+
         <Route path="/blog/:slug" element={<BlogPost />} />
 
         {/* Legal Pages */}
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+
         <Route path="/terms" element={<Terms />} />
 
         {/* Service Pages */}
@@ -65,15 +82,29 @@ const App = () => {
         <Route path="*" element={<NotFound />} />
       </Route>
 
-      {/* ================= ADMIN ================= */}
+      {/* ==================================================
+          ADMIN LOGIN
+      ================================================== */}
+
       <Route path="/admin" element={<AdminLogin />} />
 
-      <Route path="/admin/dashboard" element={<AdminDashboard />} />
-      <Route path="/admin/dashboard/contacts" element={<AdminContacts />} />
-      <Route
-        path="/admin/dashboard/newsletters"
-        element={<AdminNewsletters />}
-      />
+      {/* ==================================================
+          PROTECTED ADMIN ROUTES
+      ================================================== */}
+
+      <Route element={<AdminProtectedRoute />}>
+        {/* Dashboard */}
+        <Route path="/admin/dashboard" element={<AdminDashboard />} />
+
+        {/* Contacts */}
+        <Route path="/admin/dashboard/contacts" element={<AdminContacts />} />
+
+        {/* Newsletters */}
+        <Route
+          path="/admin/dashboard/newsletters"
+          element={<AdminNewsletters />}
+        />
+      </Route>
     </Routes>
   );
 };

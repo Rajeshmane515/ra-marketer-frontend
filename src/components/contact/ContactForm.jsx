@@ -145,9 +145,12 @@ const ContactForm = () => {
 
           {/* Submit */}
           <div className="pt-2">
-            <button type="submit" disabled={loading} className="w-full">
-              <GlowButton text={loading ? "Sending..." : "Send Message"} />
-            </button>
+            <GlowButton
+              text={loading ? "Sending..." : "Send Message"}
+              type="submit"
+              disabled={loading}
+              className="w-full"
+            />
           </div>
         </form>
       </div>
