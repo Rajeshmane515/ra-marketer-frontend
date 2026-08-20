@@ -3,6 +3,7 @@ import { blogs } from "../blogs/blogLoader";
 import BlogCard from "../components/blog/BlogCard";
 import BlogCategory from "../components/blog/BlogCategory";
 import BlogLink from "../components/blog/BlogLink";
+import blogHeader from "../assets/blog-images/blog-header.png";
 
 const Blog = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
@@ -33,17 +34,31 @@ const Blog = () => {
     <main className="min-h-screen bg-[#050816] text-white">
       <section className="max-w-7xl mx-auto px-6 py-24">
         {/* Blog Header */}
-        <div className="max-w-3xl mb-12">
-          <p className="text-blue-400 font-medium mb-3">RA MARKETER BLOG</p>
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center mb-16">
+          {/* Left Content */}
+          <div>
+            <p className="text-blue-400 font-medium mb-3">RA MARKETER BLOG</p>
 
-          <h1 className="text-4xl md:text-5xl font-bold mb-5">
-            Insights for Modern B2B Marketing
-          </h1>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-5 leading-tight">
+              Insights for Modern B2B Marketing
+            </h1>
 
-          <p className="text-gray-400 text-lg leading-7">
-            Practical strategies, insights and ideas to help businesses generate
-            leads, build demand and grow their pipeline.
-          </p>
+            <p className="text-gray-400 text-lg leading-7 max-w-2xl">
+              Practical strategies, insights and ideas to help businesses
+              generate leads, build demand and grow their pipeline.
+            </p>
+          </div>
+
+          {/* Right Image */}
+          <div className="relative flex justify-center lg:justify-end">
+            <div className="w-full max-w-lg aspect-[4/3] rounded-3xl overflow-hidden">
+              <img
+                src={blogHeader}
+                alt="B2B Marketing Insights"
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
         </div>
 
         {/* Categories */}
