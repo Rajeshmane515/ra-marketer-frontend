@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 
 import MainLayout from "./components/layout/MainLayout";
 
@@ -44,7 +44,11 @@ const App = () => {
         {/* Main Pages */}
         <Route path="/about" element={<About />} />
 
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/contact-us" element={<Contact />} />
+        <Route
+          path="/contact"
+          element={<Navigate to="/contact-us" replace />}
+        />
 
         <Route path="/services" element={<Services />} />
 

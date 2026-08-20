@@ -45,7 +45,7 @@ const AboutHero = () => {
         {/* Buttons */}
         <div className="mt-12 flex flex-col items-center justify-center gap-5 sm:flex-row">
           {/* Primary Button */}
-          <Link to="/contact" className="relative z-50">
+          <Link to="/contact-us" className="relative z-50">
             <button className="group flex h-14 items-center gap-2 rounded-2xl bg-gradient-to-r from-blue-600 to-blue-500 px-8 text-sm font-semibold text-white transition-all duration-300 hover:scale-105 hover:shadow-[0_0_40px_rgba(37,99,255,0.5)]">
               Get Started
               <ArrowRight

@@ -18,7 +18,7 @@ const CtaSection = () => {
           </p>
 
           <div className="flex justify-center">
-            <Link to="/contact" className="relative z-50">
+            <Link to="/contact-us" className="relative z-50">
               <Button text="Get Started" />
             </Link>
           </div>

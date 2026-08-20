@@ -77,7 +77,7 @@ const HeroSection = () => {
               
             "
           >
-            <Link to="/contact">
+            <Link to="/contact-us">
               <Button text="Get Started" />
             </Link>
           </div>

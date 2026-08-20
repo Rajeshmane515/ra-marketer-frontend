@@ -9,7 +9,7 @@ const navItems = [
   { name: "Services", path: "/services" },
   { name: "Blogs", path: "/blog" },
   { name: "About Us", path: "/about" },
-  { name: "Contact", path: "/contact" },
+  { name: "Contact", path: "/contact-us" },
 ];
 
 export default function MobileNavbar() {
@@ -70,7 +70,7 @@ export default function MobileNavbar() {
             </ul>
 
             <div className="mt-12">
-              <Link to="/contact" onClick={() => setMenuOpen(false)}>
+              <Link to="/contact-us" onClick={() => setMenuOpen(false)}>
                 <Button text="Get Started" />
               </Link>
             </div>

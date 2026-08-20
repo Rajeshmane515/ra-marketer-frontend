@@ -82,7 +82,7 @@ const Footer = () => {
 
               <li>
                 <Link
-                  to="/contact"
+                  to="/contact-us"
                   className="hover:text-[#2563FF] transition-all duration-300"
                 >
                   Contact

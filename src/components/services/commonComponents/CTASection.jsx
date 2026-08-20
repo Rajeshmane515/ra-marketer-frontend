@@ -11,7 +11,7 @@ const CTASection = ({ title, description, buttonText }) => {
         {description}
       </p>
 
-      <Link to="/contact">
+      <Link to="/contact-us">
         <button className="mt-10 inline-flex items-center gap-3 rounded-xl bg-[#2563FF] px-8 py-4 font-semibold text-white transition hover:scale-105">
           {buttonText}
           <ArrowRight size={18} />

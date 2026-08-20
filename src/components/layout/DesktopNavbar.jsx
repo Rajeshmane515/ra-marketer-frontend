@@ -8,7 +8,7 @@ const navItems = [
   { name: "Services", path: "/services" },
   { name: "Blogs", path: "/blog" },
   { name: "About Us", path: "/about" },
-  { name: "Contact", path: "/contact" },
+  { name: "Contact", path: "/contact-us" },
 ];
 
 const Navbar = () => {
@@ -90,7 +90,7 @@ const Navbar = () => {
         </ul>
 
         {/* CTA Button */}
-        <Link to="/contact">
+        <Link to="/contact-us">
           <Button text="Get Started" />
         </Link>
       </nav>

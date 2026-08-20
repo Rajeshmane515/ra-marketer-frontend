@@ -29,7 +29,7 @@ const PageHero = ({
       </p>
 
       <div className="mt-10 flex justify-center">
-        <Link to="/contact" className="relative z-50">
+        <Link to="/contact-us" className="relative z-50">
           <button className="rounded-xl bg-[#2563FF] px-8 py-4 font-semibold text-white transition hover:scale-105">
             {primaryButtonText}
           </button>

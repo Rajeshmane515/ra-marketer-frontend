@@ -64,7 +64,7 @@ const ServicesHero = () => {
             </p>
 
             <div className="flex justify-center lg:justify-start">
-              <Link to="/contact" className="relative z-50">
+              <Link to="/contact-us" className="relative z-50">
                 <button
                   className="
                   rounded-full
