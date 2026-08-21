@@ -255,6 +255,12 @@ const Footer = () => {
             >
               Terms & Conditions
             </Link>
+            <Link
+              to="/ccpa"
+              className="hover:text-[#2563FF] transition-all duration-300"
+            >
+              CCPA
+            </Link>
           </div>
         </div>
       </div>

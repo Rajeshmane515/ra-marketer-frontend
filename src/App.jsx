@@ -13,6 +13,7 @@ import Terms from "./pages/Terms";
 import Services from "./pages/Services";
 import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
+import CCPA from "./pages/CCPA";
 
 // Admin pages
 import AdminLogin from "./admin/pages/AdminLogin";
@@ -61,6 +62,8 @@ const App = () => {
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
 
         <Route path="/terms" element={<Terms />} />
+
+        <Route path="/ccpa" element={<CCPA />} />
 
         {/* Service Pages */}
         <Route path="/services/lead-generation" element={<LeadGeneration />} />
